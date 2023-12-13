@@ -1,0 +1,15 @@
+<html>
+<head><link rel="stylesheet" href="../static/Style.css"></head>
+<nav>
+    <a href="/imagecompression"><div>Image Compression</div></a>
+    <a href="/summarizer"><div>Paraphraser</div></a>
+    <a href="/imagecaptioning"><div>Image Captioning</div></a>
+</nav>
+    <body>
+        <img src="{{url_for('static', filename='file.jpg')}}" alt="">
+
+        <h2>
+            {{final}}
+        </h2>
+    </body>
+</html>

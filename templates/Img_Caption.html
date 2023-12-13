@@ -1,0 +1,20 @@
+<html>
+<head>
+    <link rel="stylesheet" href="{{url_for('static', filename='Style.css')}}">
+    <!-- <link rel="stylesheet" href="{{url_for('static', filename='Image Compression.css')}}"> -->
+</head>
+<nav>
+    <a href="/imagecompression"><div>Image Compression</div></a>
+    <a href="/summarizer"><div>Paraphraser</div></a>
+    <a href="/imagecaptioning"><div>Image Captioning</div></a>
+</nav>
+
+<form action="{{url_for('after')}}" enctype="multipart/form-data" method="POST">
+
+    <input type="file" name="file1">
+<!-- <input  type="submit"> -->
+<button  class="comp" type="submit">Submit</button>
+
+</form>
+
+</html>

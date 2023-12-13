@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="{{url_for('static', filename='Image Compression.css')}}">
+	<link rel="stylesheet" href="{{url_for('static', filename='Style.css')}}">
+	<title>Input Image With Preview Image</title>
+</head>
+<body>
+
+    <nav>
+        <a href="/imagecompression"><div>Image Compression</div></a>
+        <a href="/summarizer"><div>Paraphraser</div></a>
+        <a href="/imagecaptioning"><div>Image Captioning {{o}} {{n}}</div></a>
+    </nav>
+	<div class="container" style="width: 500; height: 600; overflow: hidden;">
+        <img src="{{original}}" style="overflow:hidden; width: 500; height: 600;"><img>
+	</div>
+    <div>{{o}} bytes</div>
+    <!-- <div>
+        <button class="comp">Compress</button>
+    </div> -->
+    <div class="container">
+        <img src="{{new}}" style="width: 500; height: 600; overflow: hidden;"><img>
+		<button class="select-image">Download </button>
+	</div>
+    <div>{{n}} bytes</div>
+</body>
+</html>

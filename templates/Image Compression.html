@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="{{url_for('static', filename='Image Compression.css')}}">
+	<link rel="stylesheet" href="{{url_for('static', filename='Style.css')}}">
+	<title>Input Image With Preview Image</title>
+</head>
+<body>
+
+    <nav>
+        <a href="/imagecompression"><div>Image Compression</div></a>
+        <a href="/summarizer"><div>Paraphraser</div></a>
+        <a href="/imagecaptioning"><div>Image Captioning</div></a>
+    </nav>
+	<div>
+	<!-- <div class="container">
+		<input type="file" id="file" accept="image/*" hidden>
+		<div class="img-area" data-img="">
+			<i class='bx bxs-cloud-upload icon'></i>
+			<h3>Upload Image</h3>
+			<p>Image size must be less than <span>2MB</span></p>
+		</div>
+	</div> -->
+		<!-- <button class="select-image">Select Image</button> -->
+		<!-- <div class="container">
+		<input type="file" id="file" accept="image/*" hidden>
+		<div class="img-area" data-img="">
+			<i class='bx bxs-cloud-upload icon'></i>
+			<h3>Upload Image</h3>
+			<p>Image size must be less than <span>2MB</span></p>
+		</div>
+	</div> -->
+	<div >
+		<form style="width: 500px; display: flex;" action="/find" method="POST" enctype="multipart/form-data">
+		<input style="margin-left: 20px; margin-top: 20px;" type="file" class="form-control" placeholder="Hours Studied"  name="my_image" id="pwd">
+		<button  class="comp" type="submit">Submit<button>
+	</form>
+</div>
+</div>
+	<script src="{{url_for('static', filename='Image Compression.js')}}"></script>
+</body>
+</html>

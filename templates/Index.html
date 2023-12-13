@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='index.css')}}">
+    <title>ML Project</title>
+</head>
+<body>
+    <!-- <nav>
+        <a href="/imagecompression"><div>Image Compression</div></a>
+        <a href="/summarizer"><div>Paraphraser</div></a>
+        <a href="/imagecaptioning"><div>Image Captioning</div></a>
+    </nav> -->
+
+    <!-- <main> -->
+    <div class="main">
+        <div class="box1">
+            <img src="static\img_comp.png" alt="ImageCompression">
+            <div class="text heading">Image Compression</div>
+            <div class="text">Leverages data clustering algorithms to reduce the size of digital images while preserving their visual quality.</div>
+            <a href="/imagecompression"><button class="btn1">Compress</button></a>
+        </div>
+        
+        <div class="gap"></div>
+        
+        <div class="box2">
+            <img src="static\text-sum.png" alt="Text Summarize">
+            <div class="text heading">Text Summarizer</div>
+            <div class="text">Condense large volumes of text into concise summaries, preserving the essential meaning and context of the original content.</div>
+            <a href="/summarizer"><button class="btn2">Summarize</button></a>
+        </div>
+
+        <div class="gap"></div>
+
+        <div class="box2">
+            <img src="static\text-sum.png" alt="viper">
+            <div class="text heading">Image Captioning</div>
+            <div class="text">Analyzing the visual features of an image and generating textual descriptions or captions for images using machine learning.</div>
+            <a href="/imagecaptioning"><button class="btn2">Generate Captions</button></a>
+        </div>
+
+    </div>
+    <!-- </main> -->
+</body>
+</html>
